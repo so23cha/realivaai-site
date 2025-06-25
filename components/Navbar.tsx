@@ -21,7 +21,7 @@ export default function Navbar() {
         {/* 로고 + 텍스트 전체를 Link로 감싸서 클릭 시 “/” (Home) 으로 이동 */}
       <Link href="/" className="flex items-center space-x-2">
         <Image
-          src="/images/logo.png"
+          src="/images/Logo.png"
           alt="REALIVA AI Logo"
           width={32}
           height={32}
