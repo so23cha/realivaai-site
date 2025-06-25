@@ -3,15 +3,15 @@ import Image from 'next/image'
 export default function About() {
   return (
     <section className="px-8 py-16 max-w-3xl mx-auto space-y-6">
-      <div className="w-full h-100 relative mb-8">
-        <Image
-          src="/images/about.jpg"   // public/images/about-hero.jpg
-          alt="About REALIVA AI"
-          fill                           // 부모 div 크기(가로 100%, 높이 16rem) 채우기
-          style={{ objectFit: 'cover' }} // 잘리지 않도록 화면에 맞게 자르기
-          priority                       // 첫 화면 로딩 시 우선 로드
-        />
-      </div>
+      <div className="w-full aspect-[3/2] relative mb-8">
+  <Image
+    src="/images/about.jpg"
+    alt="About REALIVA AI"
+    fill
+    style={{ objectFit: 'cover' }}
+    priority
+  />
+</div>
       <h1 className="text-3xl font-bold">About</h1>
       <p>
         <strong>REALIVA AI</strong> is a name born from the fusion of “Realize” and “Viva,” carrying a philosophy of
